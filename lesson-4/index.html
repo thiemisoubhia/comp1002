@@ -21,12 +21,12 @@
                 Contact Information
                     <!-- STEP 3: Build an input element for First Name and Last Name - include type, name, id, required, size, maxlength, and placeholder attributes -->
                     <div>
-                        
-                         
+                        <label for="fname">Name</label>
+                        <input type="text" name="fname">
                     </div>
                     <div>
-                        
-                         
+                        <label for="fname">Name</label>
+                        <input type="text" name="fname">
                     </div>
                     <!-- STEP 4: Add label elements for each of the above input elements -->
                     <div>
@@ -35,17 +35,36 @@
                     </div>
                     <!-- STEP 5: Add a select element and label for choosing the province -->
                     <div>
-                        
+                        <label for="province">Province</label>
+                        <select name="province" id="province">
+                            <optgroup label="provinces">
+                                <option value="AB">Alberta</option>
+                                <option value="BC">British Columbia</option>
+                                <option value="MB">Manitoba</option>
+                                <option value="NB">New Brunswick</option>
+                                <option value="NF">Newfoundland</option>
+                                <option value="NS">Nova Scotia</option>
+                                <option value="ON">Ontario</option>
+                                <option value="PE">Prince Edward Island</option>
+                                <option value="PQ">Quebec</option>
+                                <option value="SK">Saskatchewan</option>
+                            </optgroup>
+                            <optgroup label="territories">
+                                <option value="NT">Northwest Territories</option>
+                                <option value="NV">Nunavut</option>
+                                <option value="YK">Yukon</option>
+                            </optgroup>
+                        </select>
                     </div>
                     <!-- STEP 6: Add an input element for phone number (type="tel") -->
                     <div>
                         <label for="phone">Phone</label>
-                        <input id="phone" type="" name="phone" />
+                        <input id="phone" type="tel" name="phone" />
                     </div>
                     <!-- STEP 7: Include an input element and label for email (type="email"), then head to the top of the HTML to add CSS to make the form look better -->
                     <div>
                         <label for="email">Email</label>
-                        <input id="email" type="" name="email" />                        
+                        <input id="email" type="email" name="email" />                        
                     </div>
                 
                 <fieldset>

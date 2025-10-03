@@ -13,52 +13,73 @@
 		<section>
 			<h2><abbr title="Joint Photographic Experts Group">JPEG / JPG</abbr></h2>
 			<!-- STEP 1: A JPEG image embedded with IMG (include alt, height, and width attributes) -->
-			
+			<!-- include height and width to reserve the size for the image, its a good habit -->
+			<img src="img/sunset.jpg" alt="Sunset in Coquitlam, BC" height="384" width="512">
+
 			<p>"Sunset in Coquitlam" by Chad Teer from Coquitlam, Canada (Flickr.com - image description page) [<a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Sunset_in_Coquitlam.jpg">via Wikimedia Commons</a></p>
 		</section>
 		<section>
 			<h2><abbr title="Graphics Interchange Format">GIF</abbr> with Transparency</h2>
 			<!-- STEP 2: A GIF image embedded with IMG -->
-			
+			<!-- also a bitmap -->
+			<!-- control the color table and transparency (alpha channel) with GIF and PNG-->
+			<!-- frame by frame animation, like a slide show-->
+			<img src="http://127.0.0.1:5500/lesson-5/img/sun.gif" alt="Ilustration of Sun" height="218" width="218">
 			<p>"Sun" by purzen [Public Domain], <a href="https://openclipart.org/detail/176488/sun">via openclipart.org</a></p>
 		</section>
 		<section>
 			<h2><abbr title="Portable Network Graphics">PNG</abbr> 8-Bit and 24-Bit with Transparency</h2>
 			<!-- STEP 3a: An 8-bit PNG (with transparency) image embedded with IMG -->
-			
+			<img src="img/sun-8bit.png" alt="8-Bit PNG Sun" height="218" width="218"><br>
 			<!-- STEP 3b: A 24-bit PNG (with transparency) image embedded with IMG -->
-			
+			<img src="img/sun-24bit.png" alt="24-Bit PNG Sun" height="218" width="218">
 			<!-- STEP 3c: Optimize the 24-bit PNG with a Web app like https://compressor.io/. This will produce an 8-bit PNG with alpha transparency. Examine and compare the resulting file sizes -->
-
+			<!-- less colors -->
+			<!-- with 8 or 24 bit, colors and alpha transparency -->
+			<img src="img/sun-24bit-compressed.png" alt="24-Bit Compressed" height="218" width="218"><br>
+			
 			<p>"Sun" by purzen [Public Domain], <a href="https://openclipart.org/detail/176488/sun">via openclipart.org</a></p>
 		</section>
 		<section>
 			<h2>WebP Lossless and Lossy Image Formats</h2>
 			<!-- STEP 8: WebP image format - add both a lossless and lossy version of the sun image in the WebP image format below -->
+			<!-- embended and vectors -->
+			<img src="img/sun.webp" alt="Ilustration Sun lossless">
+			<img src="img/sun-lossy.webp" alt="Ilustration Sun lossy">
 
 		</section>
 		<section>
 			<h2><abbr title="Scalable Vector Graphics">SVG</abbr></h2>
-			<!-- STEP 4a: An SVG image embedded with IMG -->
 			
+			<!-- STEP 4a: An SVG image embedded with IMG -->
+			<img src="img/sun.svg" alt="Sun SVG" height="218" width="218">
 			<!-- STEP 4b: Scale up the above SVG by changing the height and width attribute values - then do the same with one of the above PNG versions of the same image and compare the two in a browser -->
-
+			<img src="img/sun.svg" alt="Sun SVG" height="436" width="436">
 			<!-- STEP 4c: An SVG image embedded with inline SVG -->
-
+			
 			<p>"Sun" by purzen [Public Domain], <a href="https://openclipart.org/detail/176488/sun">via openclipart.org</a></p>
 		</section>
 		<section>
 			<h2>The <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> Elements</h2>
 			<!-- STEP 5: Copy the IMG element above featuring a sunset -->
-			
 			<!-- STEP 6a: Wrap the IMG element with a FIGURE element -->
+			<figure>
+				<img src="img/sun-24bit-compressed.png" alt="24-Bit Compressed" height="218" width="218"><br>
+				<!-- STEP 6b: After the IMG element, but inside the FIGURE, add a FIGCAPTION element, with an appropriate caption -->
+				<figcaption>
+					<p>"Sun" by purzen [Public Domain], <a href="https://openclipart.org/detail/176488/sun">via openclipart.org</a></p>
+				</figcaption>
+			</figure>
+			
 
-			<!-- STEP 6b: After the IMG element, but inside the FIGURE, add a FIGCAPTION element, with an appropriate caption -->
+			<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/picture -->
+			<!-- element to control the orientation - portrait or landscape  -->
 		</section>
 		<section>
 			<h2>Animated <abbr title="Graphics Interchange Format">GIF</abbr> with Transparency</h2>
 			<!-- STEP 7: An animated frame-by-frame GIF image embedded with IMG -->
-			
+			 <!-- frame by frame animation -->
+			<img src="img/arrow-spinner.gif" alt="Arrow Spinner GIF Animated" width="85" height="85">
 		</section>
 	</main>
 	<footer>

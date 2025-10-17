@@ -6,6 +6,7 @@
     a proper DOCTYPE, character-encoding META tag, and a lang attribute on the HTML start tag. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>The HTML Pizza Company</title>
 </head>
 
@@ -13,29 +14,87 @@
     <!-- STEP 03 - Structure the page with appropriate page-level sectioning elements (header, main and footer) 
     to construct the main document outline. -->
     <header>
-        <h1>The HTML Pizza Company</h1>
         <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Order</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+            <div class="nav-container">
+                <img src="images/logo.png" alt="The HTML Pizza Company logo" width="120">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!-- STEP 04 - Think of the various pieces of information that you’d need to collect from someone to deliver them a pizza. -->
     <main>
+        <h1>The HTML Pizza Company</h1>
         <!-- STEP 05 - Build a FORM that would allow a visitor to order their pizza(s), including a variety of form controls  -->
         <form action="" method="get">
+            <fieldset>
+                <legend>Pizza Lover Info</legend>
+                <!-- first name -->
+                <div>
+                    <label for="first-name">Name</label>
+                    <input type="text" name="first-name">
+                </div>
+                <!-- last name -->
+                <div>
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name">
+                </div>
+                <!-- email -->
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="e.g. cheese@htmlpizza.com">
+                </div>
+                <!-- phone -->
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="tel" name="phone" placeholder="e.g. +1 234 567 8900">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Delivery Zone</legend>
+                <!-- address infos -->
+                <div>
+                    <label for="address">Address Line 1</label>
+                    <input id="address" type="address" name="address" required />
+                </div>
+                <div>
+                    <label for="address">Address Line 2</label>
+                    <input id="address" type="address" name="address" />
+                </div>
+                <div>
+                    <label for="postalcode">Postal Code</label>
+                    <input id="postalcode" type="number" name="postalcode" />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Create your dream HTML Pizza</legend>
+                <div>
+                    <label for="quantity">How many pizzas will it be?</label>
+                    <input id="quantity" type="number" name="quantity" min="1" max="5" />
+                </div>
+                <div>
+                    <div>
+                        <label for="pizza-size">Choose Size</label>
+                        <select id="pizza-size" name="pizza-size">
+                            <option>Small - 8”</option>
+                            <option>Medium - 12”</option>
+                            <option>Large - 16”</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Toppings</label><br>
+                        <label><input type="checkbox" name="pizza1-topping" value="pepperoni"> Pepperoni Power</label>
+                        <label><input type="checkbox" name="pizza1-topping" value="pineapple"> Pineapple Party</label>
+                        <label><input type="checkbox" name="pizza1-topping" value="extra-cheese"> Extra Cheesy</label>
+                    </div>
+                </div>
+            </fieldset>
 
+            <button type="submit">Send My Pizza!</button>
         </form>
     </main>
     <footer id="contact">

@@ -15,11 +15,10 @@
     to construct the main document outline. -->
     <header>
         <nav>
-            <div class="nav-container">
+            <div class="container">
                 <img src="images/logo.png" alt="The HTML Pizza Company logo" width="120">
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
                     <li><a href="#">Order</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -29,6 +28,35 @@
     <!-- STEP 04 - Think of the various pieces of information that you’d need to collect from someone to deliver them a pizza. -->
     <main>
         <h1>The HTML Pizza Company</h1>
+        <p>For this project, I created a fully functional HTML page that allows users to order one or more pizzas. The
+            page features a variety of form inputs and controls designed to collect all the necessary details for a
+            pizza order, making the experience interactive and user-friendly.</p>
+
+        <h3>Project Highlights</h3>
+        <p>Structured HTML: The page is built with proper HTML5 semantics, including
+            header, main, and footer elements to create a clear page outline.</p>
+        <p>
+            User-Friendly Form: The form collects essential information such as:
+            Number of pizzas
+
+            Size and shape of the pizza
+
+            Choice of toppings
+
+            Crust type (deep dish, thin crust, etc.)
+
+            Dining preference (takeout, delivery, or eat-in)
+        </p>
+        <p>
+            Variety of Inputs: The form includes text boxes, radio buttons, checkboxes, select menus, text
+            areas, and submit/reset buttons, ensuring a complete and intuitive ordering experience.
+
+            Visual Elements: Includes at least one relevant image with an alt attribute to enhance the page
+            visually.
+        </p>
+        <p>
+            Best Practices: The code contains helpful HTML comments, proper formatting, and regular commits
+            documenting progress.</p>
         <!-- STEP 05 - Build a FORM that would allow a visitor to order their pizza(s), including a variety of form controls  -->
         <form action="" method="get">
             <fieldset>
@@ -87,10 +115,30 @@
                     </div>
                     <div>
                         <label>Toppings</label><br>
-                        <label><input type="checkbox" name="pizza1-topping" value="pepperoni"> Pepperoni Power</label>
-                        <label><input type="checkbox" name="pizza1-topping" value="pineapple"> Pineapple Party</label>
-                        <label><input type="checkbox" name="pizza1-topping" value="extra-cheese"> Extra Cheesy</label>
+                        <p>Choose 3 toopings to create the best pizza!</p>
+                        <label><input type="checkbox" name="pizza-topping" value="pepperoni"> Pepperoni
+                            Power</label>
+                        <label><input type="checkbox" name="pizza-topping" value="pineapple"> Pineapple
+                            Party</label>
+                        <label><input type="checkbox" name="pizza-topping" value="extra-cheese"> Extra
+                            Cheesy</label>
+                        <label><input type="checkbox" name="pizza-topping" value="mushrooms"> Magical
+                            Mushrooms</label>
+                        <label><input type="checkbox" name="pizza-topping" value="onions"> Onion
+                            Overload</label><br>
+                        <label><input type="checkbox" name="pizza-topping" value="green-peppers"> Green
+                            Pepper
+                            Delight</label>
+                        <label><input type="checkbox" name="pizza-topping" value="black-olives"> Olive
+                            Obsession</label>
+                        <label><input type="checkbox" name="pizza-topping" value="bacon"> Bacon
+                            Bonanza</label>
+                        <label><input type="checkbox" name="pizza-topping" value="sausage"> Savory
+                            Sausage</label>
+                        <label><input type="checkbox" name="pizza-topping" value="spinach"> Spinach
+                            Supreme</label>
                     </div>
+
                 </div>
             </fieldset>
 
@@ -98,7 +146,21 @@
         </form>
     </main>
     <footer id="contact">
-        <p>&copy; 2025 - Copyright</p>
+        <div class="container">
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <img src="images/logo-background-remove.png" alt="The HTML Pizza Company logo" width="120">
+
+            <div>
+                <h5>Subscribe</h5>
+                <input type="text">
+                <button type="submit">>></button>
+            </div>
+        </div>
     </footer>
 </body>
 

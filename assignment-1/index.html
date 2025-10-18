@@ -61,7 +61,7 @@
         <div>
             <h3>Our customers Top Pizza Creations</h3>
             <div class="container">
-                
+
             </div>
         </div>
         <!-- STEP 05 - Build a FORM that would allow a visitor to order their pizza(s), including a variety of form controls  -->
@@ -105,12 +105,11 @@
                     <input id="postalcode" type="number" name="postalcode" />
                 </div>
                 <div>
-                    <div>
-                        <label>Dinning preference</label><br>
-                        <label><input type="radio" name="dinning-preference[]" value="takeout">Takeout</label>
-                        <label><input type="radio" name="dinning-preference[]" value="delivery">Delivery</label>
-                        <label><input type="radio" name="dinning-preference[]" value="extra-cheese">Eat-in</label>
-                    </div>
+                    <label>Dinning preference</label><br>
+                    <label><input type="radio" name="dinning-preference[]" value="takeout">Takeout</label>
+                    <label><input type="radio" name="dinning-preference[]" value="delivery">Delivery</label>
+                    <label><input type="radio" name="dinning-preference[]" value="extra-cheese">Eat-in</label>
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Create your dream HTML Pizza</legend>
@@ -119,6 +118,13 @@
                     <input id="quantity" type="number" name="quantity" min="1" max="5" />
                 </div>
                 <div>
+                    <div>
+                        <label>Shape?</label><br>
+                        <label><input type="radio" name="dinning-preference[]" value="round">Round</label>
+                        <label><input type="radio" name="dinning-preference[]" value="square">Square</label>
+                        <label><input type="radio" name="dinning-preference[]" value="retangular">Retangular</label>
+                        <label><input type="radio" name="dinning-preference[]" value="heart">Heart</label>
+                    </div>
                     <div>
                         <label for="pizza-size">Choose Size</label>
                         <select id="pizza-size" name="pizza-size">

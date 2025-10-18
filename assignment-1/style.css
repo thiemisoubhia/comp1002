@@ -7,6 +7,10 @@ body {
     background-color: #FEF6E4;
 }
 
+h1{
+    text-align: center;
+}
+
 .container {
     display: flex;
     justify-content: space-between;

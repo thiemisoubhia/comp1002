@@ -42,6 +42,7 @@ nav {
 .nav-links li a:hover {
     background-color: #111111;
     color: #FEF6E4;
+    border-radius: 20px;
 }
 
 /* form */
@@ -49,6 +50,9 @@ form {
     padding: 8px;
 }
 
+textarea{
+    resize: none;
+}
 
 /* button */
 

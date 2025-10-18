@@ -31,32 +31,39 @@
         <p>For this project, I created a fully functional HTML page that allows users to order one or more pizzas. The
             page features a variety of form inputs and controls designed to collect all the necessary details for a
             pizza order, making the experience interactive and user-friendly.</p>
+        <div>
+            <h3>Project Highlights</h3>
+            <p>Structured HTML: The page is built with proper HTML5 semantics, including
+                header, main, and footer elements to create a clear page outline.</p>
+            <p>
+                User-Friendly Form: The form collects essential information such as:
+                Number of pizzas
 
-        <h3>Project Highlights</h3>
-        <p>Structured HTML: The page is built with proper HTML5 semantics, including
-            header, main, and footer elements to create a clear page outline.</p>
-        <p>
-            User-Friendly Form: The form collects essential information such as:
-            Number of pizzas
+                Size and shape of the pizza
 
-            Size and shape of the pizza
+                Choice of toppings
 
-            Choice of toppings
+                Crust type (deep dish, thin crust, etc.)
 
-            Crust type (deep dish, thin crust, etc.)
+                Dining preference (takeout, delivery, or eat-in)
+            </p>
+            <p>
+                Variety of Inputs: The form includes text boxes, radio buttons, checkboxes, select menus, text
+                area, and submit buttom, ensuring a complete and intuitive ordering experience.
 
-            Dining preference (takeout, delivery, or eat-in)
-        </p>
-        <p>
-            Variety of Inputs: The form includes text boxes, radio buttons, checkboxes, select menus, text
-            areas, and submit/reset buttons, ensuring a complete and intuitive ordering experience.
+                Visual Elements: Includes at least one relevant image with an alt attribute to enhance the page
+                visually.
+            </p>
+            <p>Best Practices: The code contains helpful HTML comments, proper formatting, and regular commits
+                documenting progress.</p>
+        </div>
 
-            Visual Elements: Includes at least one relevant image with an alt attribute to enhance the page
-            visually.
-        </p>
-        <p>
-            Best Practices: The code contains helpful HTML comments, proper formatting, and regular commits
-            documenting progress.</p>
+        <div>
+            <h3>Our customers Top Pizza Creations</h3>
+            <div class="container">
+                
+            </div>
+        </div>
         <!-- STEP 05 - Build a FORM that would allow a visitor to order their pizza(s), including a variety of form controls  -->
         <form action="" method="get">
             <fieldset>
@@ -79,7 +86,7 @@
                 <!-- phone -->
                 <div>
                     <label for="phone">Phone Number</label>
-                    <input id="phone" type="tel" name="phone" placeholder="e.g. +1 234 567 8900">
+                    <input id="phone" type="tel" name="phone">
                 </div>
             </fieldset>
             <fieldset>
@@ -97,6 +104,13 @@
                     <label for="postalcode">Postal Code</label>
                     <input id="postalcode" type="number" name="postalcode" />
                 </div>
+                <div>
+                    <div>
+                        <label>Dinning preference</label><br>
+                        <label><input type="radio" name="dinning-preference[]" value="takeout">Takeout</label>
+                        <label><input type="radio" name="dinning-preference[]" value="delivery">Delivery</label>
+                        <label><input type="radio" name="dinning-preference[]" value="extra-cheese">Eat-in</label>
+                    </div>
             </fieldset>
             <fieldset>
                 <legend>Create your dream HTML Pizza</legend>
@@ -113,6 +127,7 @@
                             <option>Large - 16”</option>
                         </select>
                     </div>
+
                     <div>
                         <label>Toppings</label><br>
                         <p>Choose 3 toopings to create the best pizza!</p>
@@ -139,9 +154,22 @@
                             Supreme</label>
                     </div>
 
+                    <div>
+                        <label for="pizza-crust">Choose the Crust type</label>
+                        <select id="pizza-crust" name="pizza-crust">
+                            <option>Deep dish</option>
+                            <option>Thin crust</option>
+                            <option>Stuffed crust</option>
+                            <option>Thick crust</option>
+                        </select>
+                    </div>
                 </div>
             </fieldset>
 
+            <fieldset>
+                <legend>Do you have any comment or suggestion for us?</legend>
+                <textarea name="messsage" id="message" rows="5" cols="60"></textarea>
+            </fieldset>
             <button type="submit">Send My Pizza!</button>
         </form>
     </main>
@@ -153,7 +181,7 @@
                 <li><a href="#">Contact</a></li>
             </ul>
 
-            <img src="images/logo-background-remove.png" alt="The HTML Pizza Company logo" width="120">
+            <img src="images/footer-logo.png" alt="The HTML Pizza Company logo" width="120">
 
             <div>
                 <h5>Subscribe</h5>

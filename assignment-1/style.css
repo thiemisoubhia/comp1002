@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
 * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: "Bricolage Grotesque", sans-serif;
+    padding: 0px;
+
 }
 
 body {
@@ -7,7 +11,11 @@ body {
     background-color: #FEF6E4;
 }
 
-h1{
+main {
+    padding: 25px;
+}
+
+h1 {
     text-align: center;
 }
 
@@ -33,20 +41,22 @@ nav {
 
 .nav-links li a {
     display: block;
-    color: #111111;
+    color: #FEF6E4;
     text-align: center;
     padding: 10px 14px;
     text-decoration: none;
     font-weight: bold;
 }
 
-
+.home{
+    background-color: #111111;
+    border-radius: 15px;
+    padding: 5px;
+}
 
 /* animation */
-.nav-links li a:hover {
-    background-color: #111111;
-    color: #FEF6E4;
-    border-radius: 20px;
+.home:hover {
+    border-radius: 60px;
 }
 
 /* form */
@@ -54,9 +64,21 @@ form {
     padding: 8px;
 }
 
-textarea{
+textarea {
     resize: none;
+    margin-left: 500px;
+    margin-top: 8px;
 }
+
+input {
+    margin: 8px;
+}
+
+
+.radio{
+    color: #EE5316;
+}
+
 
 /* button */
 
@@ -64,7 +86,7 @@ textarea{
 /*footer*/
 footer {
     background-color: #111111;
-    color:#FEF6E4;
+    color: #FEF6E4;
     border-radius: 5px 5px 0px 0px;
 }
 

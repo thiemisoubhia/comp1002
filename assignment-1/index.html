@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <title>The HTML Pizza Company</title>
 </head>
 
@@ -20,17 +21,17 @@
                 <ul class="nav-links">
                     <div class="container home">
                         <img src="images/home.png" alt="" width="20">
-                        <li><a href="#" >Home</a>
+                        <li><a href="#">Home</a>
                         </li>
                     </div>
                     <div class=" container home">
                         <img src="images/order.png" alt="" width="20">
-                        <li><a href="#" >Order</a>
+                        <li><a href="#">Order</a>
                         </li>
                     </div>
                     <div class=" container home">
                         <img src="images/contact.png" alt="" width="25">
-                        <li><a href="#" >Contact</a>
+                        <li><a href="#">Contact</a>
                         </li>
                     </div>
                 </ul>
@@ -47,18 +48,14 @@
             <h3>Project Highlights</h3>
             <p>Structured HTML: The page is built with proper HTML5 semantics, including
                 header, main, and footer elements to create a clear page outline.</p>
-            <p>
-                User-Friendly Form: The form collects essential information such as:
-                Number of pizzas
-
-                Size and shape of the pizza
-
-                Choice of toppings
-
-                Crust type (deep dish, thin crust, etc.)
-
-                Dining preference (takeout, delivery, or eat-in)
-            </p>
+            <p>User-Friendly Form: The form collects essential information such as:</p>
+            <ul>
+                <li>Number of pizzas</li>
+                <li>Size and shape of the pizza</li>
+                <li>Choice of toppings</li>
+                <li>Crust type (deep dish, thin crust, etc.)</li>
+                <li>Dining preference (takeout, delivery, or eat-in)</li>
+            </ul>
             <p>
                 Variety of Inputs: The form includes text boxes, radio buttons, checkboxes, select menus, text
                 area, and submit buttom, ensuring a complete and intuitive ordering experience.
@@ -115,75 +112,25 @@
                 <!-- dinning preference -->
                 <div>
                     <label>Dinning preference</label><br>
-                    <label class="radio"><input type="radio" name="dinning-preference[]"
-                            value="takeout"><strong>Takeout</strong></label>
-                    <label class="radio"><input type="radio" name="dinning-preference[]"
-                            value="delivery"><strong>Delivery</strong></label>
-                    <label class="radio"><input type="radio" name="dinning-preference[]"
-                            value="extra-cheese"><strong>Eat-in</strong></label>
+                    <label><input type="radio" name="dinning-preference[]" value="takeout">Takeout</label>
+                    <label><input type="radio" name="dinning-preference[]" value="delivery">Delivery</label>
+                    <label><input type="radio" name="dinning-preference[]" value="extra-cheese">Eat-in</label>
                 </div>
             </fieldset>
             <fieldset>
-                <img src="" alt="">
                 <legend><strong>Create your dream HTML Pizza</strong></legend>
-
                 <div>
                     <!-- number of pizzas to create the inputs -->
                     <label for="quantity">How many pizzas will it be?</label>
-                    <input id="quantity" type="number" name="quantity" min="1" max="5"/>
+                    <input id="quantity" type="number" name="quantity" min="1" max="5" />
+
                 </div>
                 <!-- pizzas infos -->
-                <div>
-                    <label>Shape?</label><br>
-                    <label><input type="radio" name="dinning-preference[]" value="round">Round</label>
-                    <label><input type="radio" name="dinning-preference[]" value="square">Square</label>
-                    <label><input type="radio" name="dinning-preference[]" value="retangular">Retangular</label>
-                    <label><input type="radio" name="dinning-preference[]" value="heart">Heart</label>
-                </div>
-                <div>
-                    <label for="pizza-size">Choose Size</label>
-                    <select id="pizza-size" name="pizza-size">
-                        <option>Small - 8”</option>
-                        <option>Medium - 12”</option>
-                        <option>Large - 16”</option>
-                    </select>
+                <div id="pizza-forms">
+                    <!-- To create this JavaScript that modifies the form, I used the link below as a reference:
+     https://www.youtube.com/watch?v=WCRi7y6aNrQ -->
                 </div>
 
-                <div>
-                    <label>Toppings</label><br>
-                    <p>Choose 3 toopings to create the best pizza!</p>
-                    <label><input type="checkbox" name="pizza-topping" value="pepperoni"> Pepperoni
-                        Power</label>
-                    <label><input type="checkbox" name="pizza-topping" value="pineapple"> Pineapple
-                        Party</label>
-                    <label><input type="checkbox" name="pizza-topping" value="extra-cheese"> Extra
-                        Cheesy</label>
-                    <label><input type="checkbox" name="pizza-topping" value="mushrooms"> Magical
-                        Mushrooms</label>
-                    <label><input type="checkbox" name="pizza-topping" value="onions"> Onion
-                        Overload</label><br>
-                    <label><input type="checkbox" name="pizza-topping" value="green-peppers"> Green
-                        Pepper
-                        Delight</label>
-                    <label><input type="checkbox" name="pizza-topping" value="black-olives"> Olive
-                        Obsession</label>
-                    <label><input type="checkbox" name="pizza-topping" value="bacon"> Bacon
-                        Bonanza</label>
-                    <label><input type="checkbox" name="pizza-topping" value="sausage"> Savory
-                        Sausage</label>
-                    <label><input type="checkbox" name="pizza-topping" value="spinach"> Spinach
-                        Supreme</label>
-                </div>
-
-                <div>
-                  <label for="pizza-crust">Choose the Crust type</label>
-                    <select id="pizza-crust" name="pizza-crust">
-                        <option>Deep dish</option>
-                        <option>Thin crust</option>
-                        <option>Stuffed crust</option>
-                        <option>Thick crust</option>
-                    </select>
-                </div>
             </fieldset>
 
             <fieldset>
@@ -210,6 +157,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

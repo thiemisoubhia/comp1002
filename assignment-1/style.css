@@ -1,63 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
 * {
-    font-family: "Bricolage Grotesque", sans-serif;
-    padding: 0px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  padding: 0px;
 
 }
 
 body {
-    color: #111111;
-    background-color: #FEF6E4;
+  color: #111111;
+  background-color: #FEF6E4;
 }
 
 main {
-    padding: 10px 100px;
+  padding: 10px 100px;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ------------------------------------- */
 
 /* navbar */
 nav {
-    padding: 10px 30px;
+  padding: 10px 30px;
 }
 
 .nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-links li a {
-    display: block;
-    color: #FEF6E4;
-    text-align: center;
-    padding: 10px 14px;
-    text-decoration: none;
-    font-weight: bold;
+  display: block;
+  color: #FEF6E4;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.home{
-    background-color: #111111;
-    border-radius: 15px;
-    padding: 5px;
+.home {
+  background-color: #111111;
+  border-radius: 15px;
+  padding: 5px;
 }
 
 /* animation */
 .home:hover {
-    border-radius: 60px;
+  border-radius: 60px;
 }
 
 
@@ -89,7 +89,7 @@ legend {
 }
 
 label {
- /* labels side by side */
+  /* labels side by side */
   display: inline-block;
   margin: 8px 0 4px;
   font-weight: 500;
@@ -144,12 +144,40 @@ textarea {
 
 /*footer*/
 footer {
-    background-color: #111111;
-    color: #FEF6E4;
-    border-radius: 5px 5px 0px 0px;
+  background-color: #111111;
+  color: #FEF6E4;
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
 }
 
-li a {
-    color: #FEF6E4;
-    text-decoration: none;
+
+footer .links {
+  list-style: none;
+  padding: 0 0 15px;
+  margin: 0px;
+}
+
+footer .links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer .links a {
+  color: #FEF6E4;
+  text-decoration: none;
+}
+
+footer .links a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 15px;
+  color: #bbb;
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer img{
+  padding-left: 12px;
 }

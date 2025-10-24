@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- STEP 02- Construct a properly structured HTML document, including 
+    a proper DOCTYPE, character-encoding META tag, and a lang attribute on the HTML start tag. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>The HTML Pizza Company</title>
+</head>
+
+<body>
+    <!-- STEP 03 - Structure the page with appropriate page-level sectioning elements (header, main and footer) 
+    to construct the main document outline. -->
+    <header>
+        <nav>
+            <div class="container">
+                <img src="images/logo.png" alt="The HTML Pizza Company logo" width="140">
+                <ul class="nav-links">
+                    <div class="container home">
+                        <img src="images/home.png" alt="" width="20">
+                        <li><a href="#">Home</a>
+                        </li>
+                    </div>
+                    <div class=" container home">
+                        <img src="images/order.png" alt="" width="20">
+                        <li><a href="#">Order</a>
+                        </li>
+                    </div>
+                    <div class=" container home">
+                        <img src="images/contact.png" alt="" width="25">
+                        <li><a href="#">Contact</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- STEP 04 - Think of the various pieces of information that you’d need to collect from someone to deliver them a pizza. -->
+    <main>
+        <h1>The HTML Pizza Company</h1>
+        <p>For this project, I created a fully functional HTML page that allows users to order one or more pizzas. The
+            page features a variety of form inputs and controls designed to collect all the necessary details for a
+            pizza order, making the experience interactive and user-friendly.</p>
+        <div>
+            <h3>Project Highlights</h3>
+            <p>Structured HTML: The page is built with proper HTML5 semantics, including
+                header, main, and footer elements to create a clear page outline.</p>
+            <p>User-Friendly Form: The form collects essential information such as:</p>
+            <ul>
+                <li>Number of pizzas</li>
+                <li>Size and shape of the pizza</li>
+                <li>Choice of toppings</li>
+                <li>Crust type (deep dish, thin crust, etc.)</li>
+                <li>Dining preference (takeout, delivery, or eat-in)</li>
+            </ul>
+            <p>
+                Variety of Inputs: The form includes text boxes, radio buttons, checkboxes, select menus, text
+                area, and submit buttom, ensuring a complete and intuitive ordering experience.
+
+                Visual Elements: Includes at least one relevant image with an alt attribute to enhance the page
+                visually.
+            </p>
+            <p>Best Practices: The code contains helpful HTML comments, proper formatting, and regular commits
+                documenting progress.</p>
+        </div>
+
+        <div>
+            <div class="container">
+
+            </div>
+        </div>
+        <!-- STEP 05 - Build a FORM that would allow a visitor to order their pizza(s), including a variety of form controls  -->
+        <form action="process-form.php" method="get">
+            <fieldset>
+                <legend><strong>Pizza Lover Info</strong></legend>
+                <!-- first and last name -->
+                <div>
+                    <label for="first-name">Name</label>
+                    <input type="text" name="first-name">
+
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name">
+                </div>
+                <!-- email and phone-->
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="e.g. cheese@htmlpizza.com">
+
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="tel" name="phone">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Delivery Zone</strong></legend>
+                <!-- address infos -->
+                <div>
+                    <label for="address">Address Line 1</label>
+                    <input id="address" type="address" name="address" size="120" required />
+                </div>
+                <div>
+                    <label for="address">Address Line 2</label>
+                    <input id="address" type="address" name="address" size="120" />
+                </div>
+                <div>
+                    <label for="postalcode">Postal Code</label>
+                    <input id="postalcode" type="number" name="postalcode" />
+                </div>
+                <!-- dinning preference -->
+                <div>
+                    <label>Dinning preference</label><br>
+                    <label><input type="radio" name="dinning-preference[]" value="takeout">Takeout</label>
+                    <label><input type="radio" name="dinning-preference[]" value="delivery">Delivery</label>
+                    <label><input type="radio" name="dinning-preference[]" value="extra-cheese">Eat-in</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Create your dream HTML Pizza</strong></legend>
+                <div>
+                    <!-- number of pizzas to create the inputs -->
+                    <label for="quantity">How many pizzas will it be?</label>
+                    <input id="quantity" type="number" name="quantity" min="1" max="5" />
+
+                </div>
+                <!-- pizzas infos -->
+                <div id="pizza-forms">
+                    <!-- To create this JavaScript that modifies the form, I used the link below as a reference:
+     https://www.youtube.com/watch?v=WCRi7y6aNrQ -->
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Do you have any comment or suggestion for us?</strong></legend>
+                <textarea name="messsage" id="message" rows="5" cols="60"></textarea>
+            </fieldset>
+            <button type="submit">Send My Pizza!</button>
+        </form>
+    </main>
+    <footer id="contact">
+        <div class="container">
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <img src="images/footer-logo.png" alt="The HTML Pizza Company logo" width="120">
+
+            <div>
+                <h4>Contact</h4>
+                <li>Email: htmlpizza@georgianc.on.ca</li>
+                <li>Phone: +1 709 999 1234</li>
+            </div>
+        </div>
+        <p>&copy; 2025 The HTML Pizza Company</p>
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -11,6 +11,7 @@
 
 <body>
     <header>
+        <!-- navbar -->
         <nav>
             <div class="container">
                 <img src="images/logo.png" alt="The HTML Pizza Company logo" width="140">
@@ -36,8 +37,8 @@
     </header>
     <main>
         <h2>Your Order Has Been Received!</h2>
-        <?php
 
+        <?php
         $fname = $_GET["first-name"];
         $lname = $_GET["last-name"];
         $email = $_GET["email"];

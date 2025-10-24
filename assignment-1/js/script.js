@@ -2,7 +2,7 @@
 const quantityInput = document.getElementById('quantity');
 const pizzaFormsContainer = document.getElementById('pizza-forms');
 
-// Modelo de um form para uma pizza
+//pizza infos
 function createPizzaForm(pizzaNumber) {
     const div = document.createElement('div');
     div.classList.add('form-adapt');
@@ -63,9 +63,9 @@ function createPizzaForm(pizzaNumber) {
     return div;
 }
 
-// Quando o usuário altera o número de pizzas
+//number of pizzas
 quantityInput.addEventListener('input', () => {
-    pizzaFormsContainer.innerHTML = ''; // limpa
+    pizzaFormsContainer.innerHTML = ''; //clear
     const quantity = parseInt(quantityInput.value);
     if (quantity > 0 && quantity <= 5) {
         for (let i = 1; i <= quantity; i++) {

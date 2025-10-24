@@ -10,10 +10,10 @@ function createPizzaForm(pizzaNumber) {
       <h3>Pizza ${pizzaNumber}</h3>
       <div>
                         <label>Shape?</label><br>
-                        <label><input type="radio" name="dinning-preference[]" value="round">Round</label>
-                        <label><input type="radio" name="dinning-preference[]" value="square">Square</label>
-                        <label><input type="radio" name="dinning-preference[]" value="retangular">Retangular</label>
-                        <label><input type="radio" name="dinning-preference[]" value="heart">Heart</label>
+                        <label><input type="radio" name="shape[]" value="round">Round</label>
+                        <label><input type="radio" name="shape[]" value="square">Square</label>
+                        <label><input type="radio" name="shape[]" value="retangular">Retangular</label>
+                        <label><input type="radio" name="shape[]" value="heart">Heart</label>
                     </div>
                     <div>
                         <label for="pizza-size">Choose Size</label>

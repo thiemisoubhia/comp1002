@@ -26,12 +26,12 @@
                     </div>
                     <div class=" container home">
                         <img src="images/order.png" alt="" width="20">
-                        <li><a href="#">Order</a>
+                        <li><a href="#order">Order</a>
                         </li>
                     </div>
                     <div class=" container home">
                         <img src="images/contact.png" alt="" width="25">
-                        <li><a href="#">Contact</a>
+                        <li><a href="#contact">Contact</a>
                         </li>
                     </div>
                 </ul>
@@ -67,13 +67,9 @@
                 documenting progress.</p>
         </div>
 
-        <div>
-            <div class="container">
 
-            </div>
-        </div>
         <!-- STEP 05 - Build a FORM that would allow a visitor to order their pizza(s), including a variety of form controls  -->
-        <form action="process-form.php" method="get">
+        <form action="process-form.php" method="get" id="order">
             <fieldset>
                 <legend><strong>Pizza Lover Info</strong></legend>
                 <!-- first and last name -->
@@ -126,7 +122,7 @@
                 </div>
                 <!-- pizzas infos -->
                 <div id="pizza-forms">
-                    <!-- To create this JavaScript that modifies the form, I used the link below as a reference:
+                    <!--to create this js that modifies the form, I used the link below as a reference:
      https://www.youtube.com/watch?v=WCRi7y6aNrQ -->
                 </div>
 
@@ -143,13 +139,13 @@
         <div class="container">
             <ul class="links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Order</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <img src="images/footer-logo.png" alt="The HTML Pizza Company logo" width="120">
 
-            <div>
+            <div id="contact">
                 <h4>Contact</h4>
                 <li>Email: htmlpizza@georgianc.on.ca</li>
                 <li>Phone: +1 709 999 1234</li>

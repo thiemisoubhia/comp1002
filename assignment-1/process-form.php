@@ -13,17 +13,17 @@
                 <ul class="nav-links">
                     <div class="container home">
                         <img src="images/home.png" alt="" width="20">
-                        <li><a href="#">Home</a>
+                        <li><a href="index.html/#">Home</a>
                         </li>
                     </div>
                     <div class=" container home">
                         <img src="images/order.png" alt="" width="20">
-                        <li><a href="#">Order</a>
+                        <li><a href="index.html/#order">Order</a>
                         </li>
                     </div>
                     <div class=" container home">
                         <img src="images/contact.png" alt="" width="25">
-                        <li><a href="#">Contact</a>
+                        <li><a href="index.html/#contact">Contact</a>
                         </li>
                     </div>
                 </ul>

@@ -3,11 +3,32 @@
 <head>
     <meta charset="utf-8" />
     <title>Order Confirmation - The HTML Pizza Company</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>The HTML Pizza Company</h1>
+   <header>
+        <nav>
+            <div class="container">
+                <img src="images/logo.png" alt="The HTML Pizza Company logo" width="140">
+                <ul class="nav-links">
+                    <div class="container home">
+                        <img src="images/home.png" alt="" width="20">
+                        <li><a href="index.html/#">Home</a>
+                        </li>
+                    </div>
+                    <div class=" container home">
+                        <img src="images/order.png" alt="" width="20">
+                        <li><a href="index.html/#order">Order</a>
+                        </li>
+                    </div>
+                    <div class=" container home">
+                        <img src="images/contact.png" alt="" width="25">
+                        <li><a href="index.html/#contact">Contact</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <h2>Your Order Has Been Received!</h2>
@@ -34,10 +55,9 @@
         echo('<li>Phone: '.$phone.'</li>');
         echo('<li>Address: '.$address.'</li>');
         echo('<li>Postal Code: '.$postal.'</li>');
-        echo('<li>Dinning Preference: '.$preference.'</li>');
     echo('</ul>');
 
-    
+
     if (!empty($message)) {
         echo('<h3>Your Message:</h3>');
         echo('<p>'.$message.'</p>');

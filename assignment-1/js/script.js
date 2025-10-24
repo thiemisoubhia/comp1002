@@ -2,7 +2,7 @@
 const quantityInput = document.getElementById('quantity');
 const pizzaFormsContainer = document.getElementById('pizza-forms');
 
-// Modelo de um form para uma pizza
+//pizza infos
 function createPizzaForm(pizzaNumber) {
     const div = document.createElement('div');
     div.classList.add('form-adapt');
@@ -10,10 +10,10 @@ function createPizzaForm(pizzaNumber) {
       <h3>Pizza ${pizzaNumber}</h3>
       <div>
                         <label>Shape?</label><br>
-                        <label><input type="radio" name="dinning-preference[]" value="round">Round</label>
-                        <label><input type="radio" name="dinning-preference[]" value="square">Square</label>
-                        <label><input type="radio" name="dinning-preference[]" value="retangular">Retangular</label>
-                        <label><input type="radio" name="dinning-preference[]" value="heart">Heart</label>
+                        <label><input type="radio" name="shape[]" value="round">Round</label>
+                        <label><input type="radio" name="shape[]" value="square">Square</label>
+                        <label><input type="radio" name="shape[]" value="retangular">Retangular</label>
+                        <label><input type="radio" name="shape[]" value="heart">Heart</label>
                     </div>
                     <div>
                         <label for="pizza-size">Choose Size</label>
@@ -63,9 +63,9 @@ function createPizzaForm(pizzaNumber) {
     return div;
 }
 
-// Quando o usuário altera o número de pizzas
+//number of pizzas
 quantityInput.addEventListener('input', () => {
-    pizzaFormsContainer.innerHTML = ''; // limpa
+    pizzaFormsContainer.innerHTML = ''; //clear
     const quantity = parseInt(quantityInput.value);
     if (quantity > 0 && quantity <= 5) {
         for (let i = 1; i <= quantity; i++) {

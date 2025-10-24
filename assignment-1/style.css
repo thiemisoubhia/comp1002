@@ -136,6 +136,11 @@ button:hover {
   background-color: #ffa352;
 }
 
+.reset{
+  background-color: #af0000;
+  margin-top: 15px;
+}
+
 textarea {
   resize: none;
 }

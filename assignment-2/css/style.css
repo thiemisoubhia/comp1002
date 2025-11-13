@@ -172,9 +172,27 @@ a:hover{
   background-color: #EAE1DE;
 }
 
+.disney-logo {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    width: 12rem;
+}
+
+.disney-logo img {
+    display: block;
+}
+
+.disney-logo figcaption {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #ffffff;
+    margin-top: 0.2rem;
+}
+
 footer{
   bottom: 1%;
-  right: 1%;
+  right: 0%;
 }
 
 button{

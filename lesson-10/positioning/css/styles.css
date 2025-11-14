@@ -17,19 +17,19 @@ aside {
 /* STEP 2: Change the position property of the ASIDE element - static | relative | absolute | sticky - proceed to STEP 2a below */
 
 /* STEP 2a: Postion static - this is the default, and the element is within the 'flow' of the page content */
-aside {
-
-}
+/* aside {
+	position: static;
+} */
 
 /* STEP 2b: Position relative - this leaves the element in the page 'flow', but allows you to offset it's position with the top, right, bottom, and left properties. */
-aside {
-
-}
+/* aside {
+	position: relative;
+} */
 
 /* STEP 2c: Position absolute - this removes the element from the page 'flow' (watch surrounding elements move in to take up the space that it occupied before), and allows you to place it with respect to the document window using the top, right, bottom, and left properties. Comment out the above top, right, bottom, and left properties and values. */
-aside {
-
-}
+/* aside {
+	position: absolute;
+} */
 
 /* STEP 2d: Use a variety of values to place the element with respect to the document window in the above CSS rule */
 

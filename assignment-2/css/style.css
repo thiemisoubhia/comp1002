@@ -41,7 +41,6 @@ body {
   top: 1%;
   left: 50%;
   font-size: 9rem;
-  background-color: #F5D63C;
   color: #796835;
   white-space: nowrap;
   font-family: "Story Script", sans-serif;
@@ -52,7 +51,6 @@ body {
   left: 35%;
   font-size: 6rem;
   color: #4472A4;
-  background-color: #F8D944;
   z-index: 3;
 }
 
@@ -74,7 +72,6 @@ body {
 .lady,
 .tramp {
   font-size: 17rem;
-  background-color: #FAD73C;
   font-family: "Londrina Shadow", sans-serif;
   letter-spacing: 0.4rem;
   border-radius: 2rem;
@@ -95,7 +92,6 @@ body {
 .sentences h5 {
   font-size: 3rem;
   text-align: right;
-  background-color: #FAD94B;
   border-radius: 2rem;
 }
 
@@ -112,12 +108,6 @@ body {
   padding-top: 1rem;
 }
 
-.rating h5,
-.rating p,
-.credits p,
-.rating h4{
-  background-color: #F5D240;
-}
 
 .rating h4{
   top: 70.2%;
@@ -169,7 +159,6 @@ a:hover{
   left: 57%;
   font-size: 1.7rem;
   padding: 0 0.4rem;
-  background-color: #EAE1DE;
 }
 
 .disney-logo {

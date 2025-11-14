@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Story+Script&display=swap');
 
 * {
@@ -31,8 +32,7 @@ body {
 .rating h4,
 .credits p,
 .credits address p,
-.poster h6,
-footer {
+.poster h6{
   position: absolute;
   transform: translateX(-50%);
 }
@@ -191,11 +191,19 @@ a:hover{
 }
 
 footer{
-  bottom: 1%;
-  right: 0%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  background: rgba(255, 255, 255, 0.567);
+  z-index: 999;
 }
 
-button{
+footer a{
   font-size: 1.4rem;
   background-color: #F5D63C;
   border: 2px solid #ffffff;
@@ -204,16 +212,13 @@ button{
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
-}
-
-button a{
   color: #1b1b1b;
   font-family: "Londrina Shadow", cursive;
   text-decoration: none;
   font-weight: bold;
 }
 
-button:hover{
+footer > a:hover{
   font-size: 1.8rem;
 }
 

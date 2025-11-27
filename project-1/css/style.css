@@ -7,9 +7,8 @@
     font-family: "Playfair Display", serif;
 }
 
-/*index.html*/
 body {
-    background-color: #d4d4d4;
+    background-color: #f7f7f7;
 }
 
 /* header */
@@ -46,7 +45,7 @@ body {
 .nav-links a {
     text-decoration: none;
     /*remove the underline*/
-    color: #d4d4d4;
+    color: #f7f7f7;
 
     font-weight: bold;
     /*top bottom and left right*/
@@ -66,6 +65,8 @@ header>img {
     border-radius: 8px;
 }
 
+/* ------------------------------------------- */
+/* index.html */
 /*container top*/
 .content-sides {
     display: flex;
@@ -84,7 +85,7 @@ header>img {
     border-radius: 2rem;
 }
 
-.year{
+.year {
     font-size: 11rem;
     /* https://www.w3schools.com/cssref/css3_pr_transform.php */
     transform-origin: 0 0;
@@ -93,9 +94,9 @@ header>img {
     position: absolute;
     top: 20%;
     left: -50px;
-    color: rgba(219, 219, 219, 0.85);
+    color: rgba(255, 255, 255, 0.85);
     text-decoration: underline;
-    
+
 }
 
 .text-content {
@@ -122,7 +123,7 @@ header>img {
 .container-top>div {
     max-width: 900px;
     margin: 0 auto;
-    background-color: #d4d4d4;
+    background-color: #f7f7f7;
 }
 
 .container-top h1 {
@@ -150,11 +151,18 @@ header>img {
     margin: 40px auto;
 }
 
+.container-features p{
+    font-size: 1.2rem;
+}
+
+
 .container-features h2 {
     color: #567D46;
-    margin-top: 30px;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
+    margin-top: 40px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid#567D46;
+    margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
 .container-features ul {
@@ -168,27 +176,26 @@ header>img {
 
 .container-features ul li {
     color: #333;
-    padding: 15px;
+    padding: 10px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
 /*citation*/
 blockquote {
     font-style: italic;
-    margin: 40px 0;
+    margin: 40px 20px;
     padding: 20px;
     background-color: pink;
     border-radius: 1rem;
     border: 2px solid#5a5a5a;
     text-align: center;
-    font-size: 1.5em;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1.2em;
 }
 
 /*footer*/
 footer {
-    background-color:#333 ;
+    background-color: #333;
     /*dark background*/
     color: #fff;
     /*white text */
@@ -216,4 +223,157 @@ footer a:hover {
     color: #69c147;
     /*turn it pink when hover*/
     text-decoration: underline;
+}
+
+/* ---------------------------------------- */
+/* product.html */
+.product {
+    background-image: url(../img/back.png);
+}
+
+.product-page {
+    /*content in the center*/
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 2rem;
+    /*shadow for the box*/
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*product h1*/
+.product-page h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.6rem;
+    color: #333;
+    text-align: center;
+    padding: 10px 80px;
+    /*green border (line in the bottom)*/
+    border-bottom: 3px solid #567D46;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+    /* reference: https://www.w3schools.com/css/css3_box-sizing.asp */
+    box-sizing: border-box;
+}
+
+.tagline {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2rem;
+    color: #5a5a5a;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.product-im {
+    max-width: 550px;
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.product-im {
+    max-width: 550px;
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    /*image in the center*/
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-im img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    border: 5px solid #d4d4d4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.story,
+.features,
+.call {
+    padding: 10px 40px;
+}
+
+/*subtitles*/
+.product-page h2 {
+    font-family: "Playfair Display", serif;
+    color: #567D46;
+    margin-top: 30px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #567D46;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.product-page p {
+    font-size: 1.15em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.product-features {
+    display: flex;
+    gap: 20px;
+    /*wrap - break the line if necessary*/
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.feature-box {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    border-left: 5px solid pink;
+}
+
+.feature-box h3 {
+    font-family: "Oswald", sans-serif;
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #d4d4d4;
+    padding-bottom: 5px;
+}
+
+.feature-box p {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.call-button {
+    display: inline-block;
+    background-color: pink;
+    color: #333;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid #333;
+    margin-top: 20px;
+}
+
+/* button call hover */
+.call-button:hover {
+    background-color: #ffb6c1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.call {
+    text-align: center;
 }

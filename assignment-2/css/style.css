@@ -1,16 +1,21 @@
 @charset "UTF-8";
+/*the character encoding for the style sheet */
+/*external fonts from Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Story+Script&display=swap');
 
+/* global style */
 * {
   font-family: "Noto Sans", sans-serif;
 }
 
 body {
+  /* remove default margin */
   margin: 0;
   background-color: #E8E4DD;
 }
 
 .poster {
+  /* positioning context for absolute children */
   position: relative;
 }
 
@@ -20,6 +25,8 @@ body {
   display: block;
 }
 
+
+/* defining the same position and transform to this elements */
 .poster h1,
 .poster h3,
 .poster p,
@@ -34,6 +41,7 @@ body {
 .credits address p,
 .poster h6{
   position: absolute;
+  /*sdjusts horizontal position*/
   transform: translateX(-50%);
 }
 
@@ -42,6 +50,7 @@ body {
   left: 50%;
   font-size: 9rem;
   color: #796835;
+  /* dont break */
   white-space: nowrap;
   font-family: "Story Script", sans-serif;
 }
@@ -81,6 +90,7 @@ body {
 .lady {
   top: 7%;
   left: 34.5%;
+  /* defining the layer */
   z-index: 2;
 }
 
@@ -91,6 +101,7 @@ body {
 
 .sentences h5 {
   font-size: 3rem;
+  /* aligns text to the right */
   text-align: right;
   border-radius: 2rem;
 }
@@ -108,6 +119,8 @@ body {
   padding-top: 1rem;
 }
 
+/* --------------------- */
+/* rating description */
 
 .rating h4{
   top: 70.2%;
@@ -129,6 +142,7 @@ body {
   top: 72.6%;
   left: 12.5%;
   font-size: 0.9rem;
+  /* text in uppercase */
   text-transform: uppercase;
 }
 
@@ -136,6 +150,7 @@ body {
   top: 74.7%;
   left: 20.2%;
   font-size: 12px;
+  /* dont break */
   white-space: nowrap;
 }
 
@@ -161,7 +176,12 @@ a:hover{
   padding: 0 0.4rem;
 }
 
+
+/* ------------------------------- */
+/* logo  */
+
 .disney-logo {
+  /*positioned relative to the bottom right */
     position: absolute;
     bottom: 2%;
     right: 2%;
@@ -179,6 +199,11 @@ a:hover{
     margin-top: 0.2rem;
 }
 
+
+
+/* ------------------------- */
+/* footer */
+
 footer{
   position: fixed;
   left: 0;
@@ -186,8 +211,10 @@ footer{
   bottom: 0;
   display: flex;
   justify-content: center;
+  /* space between */
   gap: 1rem;
   padding: 0.8rem 1rem;
+  /*transparent effect*/
   background: rgba(255, 255, 255, 0.567);
   z-index: 999;
 }
@@ -218,6 +245,7 @@ footer > a:hover{
   animation: shimmer 1.5s linear forwards;
 }
 
+/* defines the 'shimmer'animation */
 @keyframes shimmer {
   0% { color: #000000; }
   50% { color: #2f3d4b; }

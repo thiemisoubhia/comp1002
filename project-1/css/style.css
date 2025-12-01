@@ -225,11 +225,12 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* ---------------------------------------- */
-/* product.html */
-.product {
+.back-image {
     background-image: url(../img/back.png);
 }
+
+/* ---------------------------------------- */
+/* product.html */
 
 .product-page {
     /*content in the center*/
@@ -376,4 +377,152 @@ footer a:hover {
 
 .call {
     text-align: center;
+}
+
+/* ---------------------------------------- */
+/* corporate.html */
+
+.corporate-page {
+    /*content in the center*/
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 60px;
+    background-color: #f7f7f7;
+    border-radius: 2rem;
+    /*shadow for the box*/
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.corporate-page h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.6rem;
+    color: #333;
+    text-align: center;
+    padding: 10px 80px;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.corporate-page h2 {
+    font-family: "Playfair Display", serif;
+    color: #567D46;
+    margin-top: 30px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #567D46;
+    margin-bottom: 1.5rem;
+    /* left alignment */
+    text-align: left; 
+    font-size: 2rem;
+}
+
+.corporate-page p {
+    font-size: 1.15em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+    padding: 0 40px;
+}
+
+.corporate-section {
+    padding: 20px 0;
+}
+
+.corporate-section.identity ul {
+    list-style: none;
+    padding: 0 40px;
+    margin-top: 15px;
+}
+
+.corporate-section.identity li {
+    background-color: #e6f3e1; 
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-left: 5px solid #567D46;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+
+.corporate-section.partnerships {
+    background-color: #f0f0f0;
+    padding: 30px 40px;
+    border-radius: 10px;
+    margin: 40px 40px;
+}
+
+.corporate-section.partnerships h2 {
+    text-align: center;
+    border-bottom: 3px solid #f990a4;
+    color: #333;
+}
+
+.contact-links {
+    padding: 20px;
+    border: 1px dashed #567D46;
+    border-radius: 8px;
+}
+
+.contact-links p {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.contact-links strong {
+    color: #567D46;
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.contact-links a {
+    color: #f990a4;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.contact-links a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+
+.corporate-section.legal-links {
+    margin: 40px 40px;
+}
+
+.corporate-section.legal-links h2 {
+    text-align: center;
+}
+
+.corporate-section.legal-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.corporate-section.legal-links li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50px;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.corporate-section.legal-links li a:hover {
+    background-color: #567D46;
+    color: #fff;
+    border-color: #567D46;
 }

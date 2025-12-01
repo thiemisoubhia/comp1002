@@ -151,7 +151,7 @@ header>img {
     margin: 40px auto;
 }
 
-.container-features p{
+.container-features p {
     font-size: 1.2rem;
 }
 
@@ -225,6 +225,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/*class to include the background vintage image*/
 .back-image {
     background-image: url(../img/back.png);
 }
@@ -282,13 +283,13 @@ footer a:hover {
     width: 100%;
     margin-top: 10px;
     /*image in the center*/
-    text-align: center; 
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
 .product-im img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
     border: 5px solid #d4d4d4;
@@ -414,7 +415,7 @@ footer a:hover {
     border-bottom: 3px solid #567D46;
     margin-bottom: 1.5rem;
     /* left alignment */
-    text-align: left; 
+    text-align: left;
     font-size: 2rem;
 }
 
@@ -437,7 +438,7 @@ footer a:hover {
 }
 
 .corporate-section.identity li {
-    background-color: #e6f3e1; 
+    background-color: #e6f3e1;
     margin-bottom: 10px;
     padding: 10px 15px;
     border-left: 5px solid #567D46;
@@ -540,7 +541,7 @@ footer a:hover {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
- /*main title styling */
+/*main title styling */
 .support-page h1 {
     font-family: "Playfair Display", serif;
     font-size: 2.6rem;
@@ -549,9 +550,9 @@ footer a:hover {
     padding: 10px 0;
     margin-bottom: 5px;
     /*green line*/
-    border-bottom: 3px solid #567D46; 
+    border-bottom: 3px solid #567D46;
     /*ensures the border spans the width */
-    display: block; 
+    display: block;
 }
 
 /*intro text below the main title */
@@ -574,14 +575,14 @@ footer a:hover {
     margin-top: 30px;
     padding-bottom: 8px;
     /*use the pink accent color for section dividers */
-    border-bottom: 3px solid #f990a4; 
+    border-bottom: 3px solid #f990a4;
     margin-bottom: 1.5rem;
     text-align: left;
     font-size: 2rem;
 }
 
 #faq {
-    min-height: 100px; 
+    min-height: 100px;
     padding: 20px 40px;
     background-color: #f7f7f7;
     border-radius: 10px;
@@ -657,23 +658,27 @@ footer a:hover {
     display: flex;
     gap: 30px;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
     margin-top: 20px;
 }
 
 .contact-methods>div {
-    flex: 1 1 45%; /* Allows two columns with some flex */
+    flex: 1 1 45%;
+    /* Allows two columns with some flex */
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     min-width: 250px;
-    border-left: 5px solid pink; /* Pink accent on the side */
+    border-left: 5px solid pink;
+    /* Pink accent on the side */
 }
 
 .contact-methods h3 {
     font-family: "Oswald", sans-serif;
-    color: #567D46; /* Green color */
+    color: #567D46;
+    /* Green color */
     font-size: 1.4rem;
     margin-bottom: 10px;
 }
@@ -689,7 +694,8 @@ footer a:hover {
 .policies {
     margin-top: 40px;
     padding: 30px 40px;
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #f0f0f0;
+    /* Light gray background */
     border-radius: 10px;
     text-align: center;
 }
@@ -725,4 +731,142 @@ footer a:hover {
 .policies li a:hover {
     background-color: pink;
     color: #333;
+}
+
+/* ---------------------------------------- */
+/* feedback.html */
+
+#customer-feedback-form {
+    /*centralized container*/
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 60px;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#customer-feedback-form h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.2rem;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #f990a4;
+    /*pink line*/
+}
+
+fieldset {
+    border: 2px solid #567D46;
+    /*green border*/
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+legend {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #567D46;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 1.15rem;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    /*include padding/border in the element's total width and height */
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #f990a4;
+    outline: none;
+    box-shadow: 0 0 5px rgba(249, 144, 164, 0.5);
+}
+
+textarea {
+    /* do not allow resize the text area */
+    resize: none;
+}
+
+/*rating stars*/
+#rating-stars {
+    font-size: 2.2rem;
+    color: #d4d4d4;
+    /*default gray/unfilled star color*/
+    cursor: pointer;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 5px;
+}
+
+#rating-stars span {
+    transition: color 0.2s;
+}
+
+/*class applied by JS to filled stars*/
+.star-filled {
+    color: rgb(255, 0, 140);
+    /*filled star*/
+}
+
+/*submit btn*/
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #567D46;
+    color: #f7f7f7;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    /* show pointer */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #69c147;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*success message styling*/
+#feedback-message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e6f3e1;
+    color: #567D46;
+    border: 1px solid #567D46;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
